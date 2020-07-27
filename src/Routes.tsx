@@ -3,16 +3,11 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  RouteProps,
 } from 'react-router-dom';
 import Home from './pages/Home/index';
 import Navigator from './components/Navigator/index';
 
-interface TPrivateRouteProps extends RouteProps {
-  isAuthenticated: boolean,
-}
-
-export default class Routes extends Route<TPrivateRouteProps> {
+export default class Routes extends Route {
   render() {
     return (
       <Router>

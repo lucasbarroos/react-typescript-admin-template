@@ -5,7 +5,7 @@ import Routes from './Routes';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Routes isAuthenticated={false} />
+    <Routes />
   </React.StrictMode>,
   document.getElementById('root'),
 );
