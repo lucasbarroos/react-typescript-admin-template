@@ -11,8 +11,8 @@ export default class Routes extends Route {
   render() {
     return (
       <Router>
-        <Navigator />
         <Switch>
+          <Navigator />
           <Route exact path="/">
             <Home />
           </Route>
